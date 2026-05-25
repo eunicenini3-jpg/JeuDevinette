@@ -8,9 +8,18 @@ public class Main {
            Scanner scanner = new Scanner(System.in);
            System.out.print("Saisissez un nombre entier svp : ");
            int nombreUtilisateur = scanner.nextInt();
+           if(randomNumber < nombreUtilisateur){
+               System.out.print("Nombre\n" +
+                       "proposé plus grand");
+           } else if (randomNumber > nombreUtilisateur) {
+               System.out.print("Nombre proposé plus\n" +
+                       "petit");
+           } else{
+               System.out.print("Bravoooooo! vous avez gagnez");
+           }
+           if(i == 9){
+               System.out.print("Desoléééééééé, vous avez perdu!");
+           }
        }
-
     }
-
-
 }
